@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --font-family: "Nunito", sans-serif;
+    --fs-sm: 14px;
+    --fs-md: 16px;
+    --fw-light: 300;
+    --fw-normal: 600;
+    --fw-bold: 900;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body[data-theme='dark'] {
+    --color-text: hsl(0, 0%, 100%);
+    --bg-color: hsl(207, 26%, 17%);
+    --colors-ui-base: hsl(209, 23%, 22%);
+    --border-color: hsl(0, 0%, 40%);
+    --option-selected-bg: hsl(209, 23%, 28%);
+    --option-hover-bg: hsl(209, 23%, 30%);
+}
+
+body[data-theme='light'] {
+    --color-text: hsl(200, 15%, 8%);
+    --bg-color: hsl(0, 0%, 98%);
+    --colors-ui-base: hsl(0, 0%, 100%);
+    --border-color: hsl(0, 0%, 80%);
+    --option-selected-bg: hsl(0, 0%, 90%);
+    --option-hover-bg: hsl(0, 0%, 85%);
+}
+
+body {
+    font-family: var(--font-family);
+    color: var(--color-text);
+    font-weight: var(--fw-light);
+    background-color: var(--bg-color);
+}
+
+
+.container {
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+ul,
+li {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: inline-block;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+span,
+i,
+input,
+textarea,
+select {
+    display: inline-block;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    display: inline-block;
+    cursor: pointer;
+}

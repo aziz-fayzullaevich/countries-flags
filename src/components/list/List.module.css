@@ -1,0 +1,19 @@
+.listBlock {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    gap: 60px;
+}
+
+@media screen and (max-width:800px) {
+    .listBlock {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width:500px) {
+    .listBlock {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}

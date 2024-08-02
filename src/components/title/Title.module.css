@@ -1,0 +1,16 @@
+.mainBlock {
+    padding: 40px 0;
+}
+
+.innerMainBlock {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    .innerMainBlock {
+        display: block;
+    }
+}
